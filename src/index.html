@@ -14,13 +14,15 @@
         <div class="header__logo-toggle">
           <div class="logo logo--header">
             <picture class="logo__image logo__image--header">
-              <source media="(min-width: 768px)" srcset="img/decor/logo-tab.png">
+              <source media="(min-width: 768px)" srcset="img/decor/logo_tab.png">
               <img src="img/decor/logo_mob.png" alt="logo">
             </picture>
           </div>
           <div class="header__toggle">
             <button class="header__toggle-button header__toggle-button--cross"></button>
-            <button class="header__toggle-button header__toggle-button--hamburger"></button>
+            <button class="header__toggle-button header__toggle-button--hamburger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21"><g><g><path fill="#737373" d="M1.598-.008h26.777c.568.166.953.437 1.246.874.172.257.484.8.32 1.342-.212.692-.66 1.241-1.343 1.467-.489.16-1.29.062-1.885.062H3.323c-.702 0-1.595.087-2.109-.125C.184 3.188-.393 1.796.415.71c.172-.23.519-.475.8-.593.128-.054.286-.044.383-.125zm.064 8.614h25.306c.524 0 1.208-.079 1.63.062.452.152.78.45 1.023.812.172.256.484.8.32 1.342-.212.691-.66 1.24-1.343 1.467-.489.16-1.29.062-1.885.062H3.483c-.656 0-1.566.118-2.109-.062-1.123-.375-1.82-1.808-.959-2.965.172-.23.519-.476.8-.593.137-.058.33-.047.447-.125zm0 8.613h25.306c.524 0 1.208-.078 1.63.063.452.151.78.449 1.023.812.172.256.484.8.32 1.342-.213.694-.659 1.236-1.343 1.466-.472.16-1.271.063-1.853.063H1.598c-1.067-.311-2.135-1.54-1.31-2.84.2-.317.561-.628.926-.78.138-.058.33-.047.448-.126z"/><path d="M1.598-.008h26.777c.568.166.953.437 1.246.874.172.257.484.8.32 1.342-.212.692-.66 1.241-1.343 1.467-.489.16-1.29.062-1.885.062H3.323c-.702 0-1.595.087-2.109-.125C.184 3.188-.393 1.796.415.71c.172-.23.519-.475.8-.593.128-.054.286-.044.383-.125zm.064 8.614h25.306c.524 0 1.208-.079 1.63.062.452.152.78.45 1.023.812.172.256.484.8.32 1.342-.212.691-.66 1.24-1.343 1.467-.489.16-1.29.062-1.885.062H3.483c-.656 0-1.566.118-2.109-.062-1.123-.375-1.82-1.808-.959-2.965.172-.23.519-.476.8-.593.137-.058.33-.047.447-.125zm0 8.613h25.306c.524 0 1.208-.078 1.63.063.452.151.78.449 1.023.812.172.256.484.8.32 1.342-.213.694-.659 1.236-1.343 1.466-.472.16-1.271.063-1.853.063H1.598c-1.067-.311-2.135-1.54-1.31-2.84.2-.317.561-.628.926-.78.138-.058.33-.047.448-.126z"/></g></g></svg>
+            </button>
           </div>
         </div>
         <nav class="nav nav--header">
@@ -33,13 +35,13 @@
       </div>
       <div class="header__bottom">
         <div class="container container--header-bottom">
-          <div class="look-video">
+          <div class="look-video look-video--header-bottom">
             <span class="look-video__text"></span>
             <button class="look-video__button"></button>
           </div>
           <div class="page-title">
               <h1 class="page-title__title">
-                rizor hovertrax 4.0
+                rizor</br> hovertrax</br> 4.0
               </h1>
               <p class="page-title__description">
                 Маневренность, легкость, экологичность
@@ -54,200 +56,203 @@
     <section class="advantages">
       <div class="container container--advantages">
         <h2 class="section-title">преимущества</h2>
+        <div class="advantages__article-list">
+          <article class="item-feature item-feature--design">
+            <h3 class="item-feature__title item-feature--design">Дизайн</h3>
+            <div class="item-feature__media">
+              <picture class="item-feature__image item-feature__image--design">
+                <source media="(min-width: 1920px)" srcset="img/content/design_des.png">
+                <img src="img/content/design_tab.png" alt="logo">
+              </picture>
+              <div class="look-video look-video--design">
+                <p class="look-video__circle"></p>
+                <button class="look-video__button"></button>
+              </div>
+              <div class="item-feature__text item-feature__text--design">
+                <p class="item-feature__text-description">
+                  Внешний вид скутера дышит идеями футуризма:
+                </p>
+                <ul class="item-feature__specifications-list">
+                  <li class="item-feature__specification-item">
+                    плавные линии
+                  </li>
+                  <li class="item-feature__specification-item">
+                    подсветка светодиодными индикаторами
+                  </li>
+                  <li class="item-feature__specification-item">
+                    рельефные бамперы, оснащенные защитными панелями
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="item-feature item-feature--color">
+            <h3 class="item-feature__title item-feature--color">Цвет</h3>
+            <div class="item-feature__text">
+              <p class="item-feature__text-description item-feature__text-description--color">
+                Модель представлена сразу в нескольких цветах.
+              </p>
+            </div>
+            <div class="item-feature__media">
+              <div class="item-feature__variants">
+                <span class="item-feature__variant item-feature__variant--yellow"></span>
+                <span class="item-feature__variant item-feature__variant--blue"></span>
+                <span class="item-feature__variant item-feature__variant--red"></span>
+                <span class="item-feature__variant item-feature__variant--white"></span>
+                <span class="item-feature__variant item-feature__variant--black"></span>
+              </div>
+              <picture class="item-feature__image item-feature__image--design">
+                <source media="(min-width: 1920px)" srcset="img/content/color-gyro_des.png">
+                <source media="(min-width: 768px)" srcset="img/content/color-gyro_tab">
+                <img src="img/content/color-gyro_mob.png" alt="color">
+              </picture>
+            </div>
+          </article>
+          <article class="item-feature item-feature--indikators">
+            <h3 class="item-feature__title item-feature--indikators">Индикаторы</h3>
+            <div class="item-feature__text">
+              <p class="item-feature__content-text item-feature__content-text--indikators">
+                Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.
+              </p>
+              <p class="item-feature__content-text item-feature__content-text--indikators">
+                Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.
+              </p>
+            </div>
+            <div class="look-video look-video--indikators">
+              <span class="look-video__text">Смотреть видео</span>
+              <button class="look-video__button"></button>
+            </div>
+              <picture class="item-feature__image item-feature__image--indicators">
+                <source media="(min-width: 1920px)" srcset="img/content/indicators_des.jpg">
+                <source media="(min-width: 768px)" srcset="img/content/indicators_tab.jpg">
+                <img src="img/content/indicators_mob.jpg" alt="color">
+              </picture>
+            </div>
+          </article>
+          <article class="item-feature item-feature--modes">
+            <h3 class="item-feature__title item-feature--modes">Режимы</h3>
+            <div class="item-feature__text item-feature__text--modes">
+              <p class="item-feature__text-description">
+                Помимо «умной» подсветки, Hovertrax 4.0 снабжён двумя скоростными режимами.
+              </p>
+              <ul class="item-feature__specifications-list item-feature__specifications-list--modes">
+                <li class="item-feature__specification-item">
+                  Один для продвинутых пользователей
+                </li>
+                <li class="item-feature__specification-item">
+                   Второй для новичков
+                </li>
+              </ul>
+            </div>
+            <div class="item-feature__parameters item-feature__parameters--modes">
+              <div class="item-feature__parameter">
+                <div class="item-feature__parameter-wrapper">
+                  <span class="item-feature__parameter-value">13</span>
+                  <span class="item-feature__parameter-unit">&nbsp;км/ч</span>
+                </div>
+                <p class="item-feature__parameter-name">
+                  Максимальная скорость
+                </p>
+              </div>
+              <div class="item-feature__parameter">
+                <div class="item-feature__parameter-wrapper">
+                  <p class="item-feature__parameter-value">2 </p>
+                </div>
+                <span class="item-feature__parameter-name">
+                  Скоростных режима
+                </span>
+              </div>
+            </div>
+            <div class="look-video look-video--modes">
+              <span class="look-video__text">Смотреть видео</span>
+              <button class="look-video__button"></button>
+            </div>
+            <div class="item-feature__media">
+              <picture class="item-feature__image item-feature__image--modes">
+                <source media="(min-width: 1920px)" srcset="img/content/modes_des.png">
+                <source media="(min-width: 768px)" srcset="img/content/modes_tab.png">
+                <img src="img/content/modes_mob.png" alt="modes">
+              </picture>
+            </div>
+          </article>
+          <article class="item-feature item-feature--battery">
+            <div class="item-feature__media">
+              <picture class="item-feature__image item-feature__image--modes">
+                <source media="(min-width: 1920px)" srcset="img/content/battery_des.png">
+                <source media="(min-width: 768px)" srcset="img/content/battery_tab.png">
+                <img src="img/content/battery_mob.png" alt="color">
+              </picture>
+            </div>
+            <h3 class="item-feature__title item-feature--battery">Аккумулятор</h3>
+            <div class="item-feature__text item-feature__text--battery">
+              <p class="item-feature__content-text">
+                Имеет съемную аккумуляторную батарею. Это позволяет легко вытащить сам АКБ и, к примеру, перевезти весь гироборд в самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть документы, подтверждающие лицензию на его производство и использование.
+              </p>
+            </div>
+            <div class="item-feature__parameters item-feature__parameters--battery">
+              <div class="item-feature__parameter">
+                <div class="item-feature__parameter-wrapper">
+                  <span class="item-feature__parameter-value">25</span>
+                  <span class="item-feature__parameter-unit">&nbsp;км</span>
+                </div>
+                <span class="item-feature__parameter-name">
+                  Запас хода
+                </span>
+              </div>
+              <div class="item-feature__parameter">
+                <div class="item-feature__parameter-wrapper">
+                  <span class="item-feature__parameter-value">2</span>
+                  <span class="item-feature__parameter-unit">&nbsp;м</span>
+                </div>
+                <span class="item-feature__parameter-name">
+                  Время зарядки
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="item-feature item-feature--electronics">
+            <h3 class="item-feature__title item-feature--electronics">Электроника</h3>
+            <div class="item-feature__text item-feature__text--electronics">
+              <p class="item-feature__content-text">
+                При эксплуатации Rizor Hovertrax 4.0 нельзя не отметить плавность торможения и быстроту набора скорости.
+              </p>
+              <p class="item-feature__content-text">
+                В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.
+              </p>
+            </div>
+            <div class="item-feature__parameters item-feature__parameters--electronics">
+              <div class="item-feature__parameter">
+                <div class="item-feature__parameter-wrapper">
+                  <img src="../img/decor/motor.png" alt="motor" class="item-feature__parameter-image">
+                </div>
+                <span class="item-feature__parameter-name">
+                  Бесшумный двигатель
+                </span>
+              </div>
+              <div class="item-feature__parameter">
+                <div class="item-feature__parameter-wrapper">
+                  <img src="../img/decor/gyroscope.png" alt="motor" class="item-feature__parameter-image">
+                </div>
+                <span class="item-feature__parameter-name">
+                  Встроенный гироскоп
+                </span>
+              </div>
+            </div>
+            <div class="item-feature__media">
+              <picture class="item-feature__image item-feature__image--electronics">
+                <source media="(min-width: 1920px)" srcset="img/content/electronics_des.jpg">
+                <source media="(min-width: 768px)" srcset="img/content/electronics_tab.jpg">
+                <img src="img/content/electronics_mob.jpg" alt="electronics">
+              </picture>
+              <div class="look-video look-video--electronics">
+                <p class="look-video__circle"></p>
+                <button class="look-video__button"></button>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-      <article class="item-feature item-feature--design">
-        <h3 class="item-feature__title item-feature--design">Дизайн</h3>
-        <div class="item-feature__media">
-          <picture class="item-feature__image item-feature__image--design">
-            <source media="(min-width: 1920px)" srcset="img/decor/design_des.png">
-            <img src="img/decor/design_tab.png" alt="logo">
-          </picture>
-          <div class="look-video look-video--design">
-            <p class="look-video__circle"></p>
-            <button class="look-video__button"></button>
-          </div>
-          <div class="item-feature__text item-feature__text--design">
-            <p class="item-feature__text-description">
-              Внешний вид скутера дышит идеями футуризма:
-            </p>
-            <ul class="item-feature__specifications-list">
-              <li class="item-feature__specification-item">
-                плавные линии
-              </li>
-              <li class="item-feature__specification-item">
-                подсветка светодиодными индикаторами
-              </li>
-              <li class="item-feature__specification-item">
-                рельефные бамперы, оснащенные защитными панелями
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
-      <article class="item-feature item-feature--color">
-        <h3 class="item-feature__title item-feature--color">Цвет</h3>
-        <div class="item-feature__text">
-          <p class="item-feature__text-description item-feature__text-description--color">
-            Модель представлена сразу в нескольких цветах.
-          </p>
-        </div>
-        <div class="item-feature__media">
-          <div class="item-feature__variants">
-            <span class="item-feature__variant item-feature__variant--yellow"></span>
-            <span class="item-feature__variant item-feature__variant--blue"></span>
-            <span class="item-feature__variant item-feature__variant--red"></span>
-            <span class="item-feature__variant item-feature__variant--white"></span>
-            <span class="item-feature__variant item-feature__variant--black"></span>
-          </div>
-          <picture class="item-feature__image item-feature__image--design">
-            <source media="(min-width: 1920px)" srcset="img/decor/color-gyro_des.png">
-            <source media="(min-width: 768px)" srcset="img/decor/color-gyro_tab">
-            <img src="img/decor/color-gyro_mob.png" alt="color">
-          </picture>
-        </div>
-      </article>
-      <article class="item-feature item-feature--indikators">
-        <h3 class="item-feature__title item-feature--indikators">Цвет</h3>
-        <div class="item-feature__text">
-          <p class="item-feature__text-description item-feature__text-description--indikators">
-            Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.
-          </p>
-          <p class="item-feature__text-description item-feature__text-description--indikators">
-            Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.
-          </p>
-        </div>
-        <div class="look-video look-video--indikators">
-          <span class="look-video__text">Смотреть видео</span>
-          <button class="look-video__button"></button>
-        </div>
-          <picture class="item-feature__image item-feature__image--indicators">
-            <source media="(min-width: 1920px)" srcset="img/decor/indicators_des.jpg">
-            <source media="(min-width: 768px)" srcset="img/decor/indicators_tab.jpg">
-            <img src="img/decor/indicators_mob.jpg" alt="color">
-          </picture>
-        </div>
-      </article>
-      <article class="item-feature item-feature--modes">
-        <h3 class="item-feature__title item-feature--modes">Цвет</h3>
-        <div class="item-feature__text item-feature__text--modes">
-          <p class="item-feature__text-description">
-            Помимо «умной» подсветки, Hovertrax 4.0 снабжён двумя скоростными режимами.
-          </p>
-          <ul class="item-feature__specifications-list item-feature__specifications-list--modes">
-            <li class="item-feature__specification-item">
-              Один для продвинутых пользователей
-            </li>
-            <li class="item-feature__specification-item">
-               Второй для новичков
-            </li>
-          </ul>
-        </div>
-        <div class="item-feature__parameters item-feature__parameters--modes">
-          <div class="item-feature__parameter">
-            <div class="item-feature__parameter-wrapper">
-              <span class="item-feature__parameter-value">13</span>
-              <span class="item-feature__parameter-unit">км/ч</span>
-            </div>
-            <span class="item-feature__parameter-name">
-              Максимальная скорость
-            </span>
-          </div>
-          <div class="item-feature__parameter">
-            <div class="item-feature__parameter-wrapper">
-              <span class="item-feature__parameter-value">2</span>
-            </div>
-            <span class="item-feature__parameter-name">
-              Скоростных режима
-            </span>
-          </div>
-        </div>
-        <div class="look-video look-video--modes">
-          <span class="look-video__text">Смотреть видео</span>
-          <button class="look-video__button"></button>
-        </div>
-        <div class="item-feature__media">
-          <picture class="item-feature__image item-feature__image--modes">
-            <source media="(min-width: 1920px)" srcset="img/decor/modes__des.png">
-            <source media="(min-width: 768px)" srcset="img/decor/modes__tab.png">
-            <img src="img/decor/modes__mob.png" alt="color">
-          </picture>
-        </div>
-      </article>
-      <article class="item-feature item-feature--battery">
-        <div class="item-feature__media">
-          <picture class="item-feature__image item-feature__image--modes">
-            <source media="(min-width: 1920px)" srcset="img/decor/modes__des.png">
-            <source media="(min-width: 768px)" srcset="img/decor/modes__tab.png">
-            <img src="img/decor/modes__mob.png" alt="color">
-          </picture>
-        </div>
-        <h3 class="item-feature__title item-feature--battery">Аккумулятор</h3>
-        <div class="item-feature__text item-feature__text--battery">
-          <p class="item-feature__text-description">
-            Имеет съемную аккумуляторную батарею. Это позволяет легко вытащить сам АКБ и, к примеру, перевезти весь гироборд в самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть документы, подтверждающие лицензию на его производство и использование.
-          </p>
-        </div>
-        <div class="item-feature__parameters item-feature__parameters--battery">
-          <div class="item-feature__parameter">
-            <div class="item-feature__parameter-wrapper">
-              <span class="item-feature__parameter-value">25</span>
-              <span class="item-feature__parameter-unit">км</span>
-            </div>
-            <span class="item-feature__parameter-name">
-              Запас хода
-            </span>
-          </div>
-          <div class="item-feature__parameter">
-            <div class="item-feature__parameter-wrapper">
-              <span class="item-feature__parameter-value">2</span>
-              <span class="item-feature__parameter-unit">м</span>
-            </div>
-            <span class="item-feature__parameter-name">
-              Время зарядки
-            </span>
-          </div>
-        </div>
-      </article>
-      <article class="item-feature item-feature--electronics">
-        <h3 class="item-feature__title item-feature--electronics">Электроника</h3>
-        <div class="item-feature__text item-feature__text--electronics">
-          <p class="item-feature__text-description">
-            При эксплуатации Rizor Hovertrax 4.0 нельзя не отметить плавность торможения и быстроту набора скорости.
-          </p>
-          <p class="item-feature__text-description">
-            В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.
-          </p>
-        </div>
-        <div class="item-feature__parameters item-feature__parameters--electronics">
-          <div class="item-feature__parameter">
-            <div class="item-feature__parameter-wrapper">
-              <img src="../img/decor/motor.png" alt="motor" class="item-feature__parameter-image">
-            </div>
-            <span class="item-feature__parameter-name">
-              Бесшумный двигатель
-            </span>
-          </div>
-          <div class="item-feature__parameter">
-            <div class="item-feature__parameter-wrapper">
-              <img src="../img/decor/gyroscope.png" alt="motor" class="item-feature__parameter-image">
-            </div>
-            <span class="item-feature__parameter-name">
-              Встроенный гироскоп
-            </span>
-          </div>
-        </div>
-        <div class="item-feature__media">
-          <picture class="item-feature__image item-feature__image--electronics">
-            <source media="(min-width: 1920px)" srcset="img/decor/electronics_des.jpg">
-            <source media="(min-width: 768px)" srcset="img/decor/electronics_tab.jpg">
-            <img src="img/decor/electronics_mob.jpg" alt="color">
-          </picture>
-          <div class="look-video look-video--electronics">
-            <p class="look-video__circle"></p>
-            <button class="look-video__button"></button>
-          </div>
-        </div>
-      </article>
+
     </section>
     <section class="characteristics">
       <div class="container container--characteristics">
@@ -314,9 +319,9 @@
         </div>
         <div class="audience__media">
           <picture class="audience__image">
-            <source media="(min-width: 1920px)" srcset="img/decor/audience_des.png">
+            <source media="(min-width: 1920px)" srcset="img/content/audience_des.png">
             <source media="(min-width: 768px)" srcset="img/decor/audience_tab.png">
-            <img src="img/decor/audience_mob.png" alt="color">
+            <img src="img/content/audience_mob.png" alt="color">
           </picture>
           <p class="audience__picture-caption">4.0 Rizor</p>
         </div>

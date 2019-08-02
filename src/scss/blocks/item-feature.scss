@@ -1,0 +1,74 @@
+.item-feature{
+  margin-bottom: 50px;
+  &__title{
+    padding: 70px 0 30px;
+    color: $title-color;
+    font-family: $title-ff;
+    font-size: 24px;
+    font-weight: 400;
+    // Text style for "д, изайн"
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__text{
+    color: $title-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__text-description{
+    padding: 0 40px 25px 40px;
+  }
+  &__content-text{
+    padding: 0 10px 10px 10px;
+  }
+  &__specification-item{
+    position: relative;
+    padding: 0 40px 20px 70px;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 5px;
+      left: 30px;
+      top: 8px;
+      background-color: black;
+    }
+  }
+  &__parameters{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+  &__parameters-wrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  &__parameter{
+    @extend %fl-col;
+  }
+  &__parameter-value{
+    text-align: center;
+    text-transform: lowercase;
+    color: $section-title-color;
+    font-family: $title-ff;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -2.8px;
+  }
+  &__parameter-unit{
+    color: $section-title-color;
+    font-family: $title-ff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1.26px;
+  }
+  &__parameter-name{
+    font-size: 14px;
+    font-family: $content-ff;
+    font-weight: 300;
+    line-height: 30px;
+  }
+}

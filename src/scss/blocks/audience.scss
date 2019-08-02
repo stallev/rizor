@@ -1,1 +1,46 @@
-.audience{}
+.audience{
+  background-color: $section-title-color;
+  color: $alter-content-color;
+  font-family: $content-ff;
+  &__info{
+    @extend %fl-col;
+    align-items: center;
+  }
+  &__info-title{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    // Text style for "д, ля кого"
+    letter-spacing: 1.12px;
+  }
+  &__info-text-wrapper{
+    margin-bottom: 80px;
+  }
+  &__info-description{
+    margin-bottom: 15px;
+    color: $alter-content-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  &__to-catalog{
+    box-sizing: border-box;
+    display: block;
+    padding: 5px 40px;
+    box-shadow: 0 5px 5px rgba(0, 0, 1, 0.2);
+    border-radius: 25px;
+    background-color: $alter-content-color;
+    color: $section-title-color;
+    font-family: $content-ff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    // Text style for "п, ерейти"
+    letter-spacing: 1.12px;
+      }
+}
