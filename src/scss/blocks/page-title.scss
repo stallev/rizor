@@ -1,13 +1,12 @@
 .page-title{
   &__title{
+    margin-bottom: 21px;
     color: $alter-content-color;
     font-family: $title-ff;
     font-size: 30px;
     font-weight: 400;
     // Text style for "R, Izor  ,"
     letter-spacing: 2.4px;
-    // Text style for "4.0"
-    letter-spacing: -4.5px;
     text-transform: uppercase;
   }
   &__description{

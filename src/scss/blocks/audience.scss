@@ -2,11 +2,35 @@
   background-color: $section-title-color;
   color: $alter-content-color;
   font-family: $content-ff;
+  &__media{
+    position: relative;
+    order: 1;
+  }
+  &__image{
+    position: absolute;
+    top: -64px;
+  }
+  &__picture-caption{
+    position: absolute;
+    top: 137px;
+    right: 18px;
+    opacity: 0.5;
+    color: $alter-content-color;
+    font-family: $title-ff;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 55.67px;
+    letter-spacing: 6.4px;
+    text-align: right;
+  }
   &__info{
     @extend %fl-col;
     align-items: center;
+    order: 2;
+    padding-top: 280px;
   }
   &__info-title{
+    margin-bottom: 20px;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -16,7 +40,7 @@
     letter-spacing: 1.12px;
   }
   &__info-text-wrapper{
-    margin-bottom: 80px;
+    margin-bottom: 54px;
   }
   &__info-description{
     margin-bottom: 15px;
@@ -24,12 +48,13 @@
     font-family: $content-ff;
     font-size: 16px;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 24px;
   }
   &__to-catalog{
     box-sizing: border-box;
     display: block;
-    padding: 5px 40px;
+    margin-bottom: 75px;
+    padding: 11px 54px;
     box-shadow: 0 5px 5px rgba(0, 0, 1, 0.2);
     border-radius: 25px;
     background-color: $alter-content-color;

@@ -12,4 +12,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  &--characteristics{
+    margin-bottom: 100px;
+  }
+  &--audience{
+    @extend %fl-col;
+  }
 }

@@ -1,5 +1,31 @@
 .look-video{
+  display: none;
+  position: absolute;
   &--header-bottom{
     display: none;
+  }
+  &--electronics{
+    display: block;
+    bottom: calc(50% - 30px);
+    left: calc(50% - 30px);
+  }
+  &__circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $alter-content-color;
+    opacity: 0.8;
+  }
+  &__button{
+    padding: 0;
+    width: 25px;
+    height: 28px;
+    margin: 0 auto;
+    background-image: url("../img/decor/playback_button.png");
+    background-size: 112%;
+    background-repeat: no-repeat;
   }
 }
