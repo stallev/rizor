@@ -1,6 +1,9 @@
 .item-feature{
   @extend %fl-col;
   margin-bottom: 35px;
+  @include respond-to(tabletAndWider){
+    position: relative;
+  }
   &--color{
     padding-bottom: 13px;
   }

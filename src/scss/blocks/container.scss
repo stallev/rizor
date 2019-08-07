@@ -11,6 +11,9 @@
   &--header-bottom{
     padding-left: 10px;
     padding-right: 10px;
+    @include respond-to(tabletAndWider){
+      position: relative;
+    }
   }
   &--characteristics{
     margin-bottom: 100px;

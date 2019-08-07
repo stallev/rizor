@@ -1,8 +1,16 @@
 .look-video{
   display: none;
   position: absolute;
+  @include respond-to(tabletAndWider){
+    position: absolute;
+  }
   &--header-bottom{
     display: none;
+    @include respond-to(tabletAndWider){
+      display: flex;
+      left: 253px;
+      top: -146px;
+    }
   }
   &--electronics{
     display: block;
@@ -27,5 +35,27 @@
     background-image: url("../img/decor/playback_button.png");
     background-size: 112%;
     background-repeat: no-repeat;
+    &--side{
+      position: absolute;
+      left: 7px;
+      top: -5px;
+      @include respond-to(tabletAndWider){
+        width: 50px;
+        height: 58px;
+      }
+    }
+  }
+  &__text{
+    height: 68px;
+    width: 24px;
+    transform: rotate(-90deg);
+    color: $title-color;
+    font-family: $content-ff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    // Text style for "С, мотреть"
+    letter-spacing: 1px;
   }
 }

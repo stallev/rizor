@@ -1,22 +1,27 @@
 .nav{
   display: none;
+  @include respond-to(tabletAndWider){
+    display: flex;
+    width: 61%;
+    padding-top: 15px;
+  }
 }
 .nav__list{
-  width: 60%;
-  box-sizing: border-box;
   display: flex;
-  margin: 25px auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
 }
 .nav__item{
-  list-style-type: none;
-  flex-grow: 1;
-
 }
 .nav__link{
-  font-family: 'Playfair Display', Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 18px;
-  text-transform: capitalize;
+  display: block;
+  color: $title-color;
+  font-family: $content-ff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  // Text style for "П, реимуще"
+  letter-spacing: 0.96px;
 }
