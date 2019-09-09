@@ -2,12 +2,23 @@
 }
 .header__upper{
   padding: 10px 0 20px;
+  @include respond-to(tabletAndWider){
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 28px;
+  }
 }
 .header__bottom{
   padding: 132px 0 135px;
   background-image: url("../img/content/header-bg-image_mob.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  @include respond-to(tabletAndWider){
+    padding: 240px 0 250px;
+    background-image: url("../img/content/header-bg-image_tab.png");
+    background-size: 62%;
+    background-position-x: 290px;
+  }
 }
 .header__logo-toggle{
   display: flex;
@@ -29,5 +40,8 @@
     &--hamburger{
       background-image: url("../img/decor/hamburger.png");
     }
+  }
+  @include respond-to(tabletAndWider){
+    display: none;
   }
 }

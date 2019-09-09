@@ -11,6 +11,14 @@
   &--header-bottom{
     padding-left: 10px;
     padding-right: 10px;
+    @include respond-to(tabletAndWider){
+      position: relative;
+    }
+  }
+  &--advantages{
+    @include respond-to(tabletAndWider){
+      overflow: hidden;
+    }
   }
   &--characteristics{
     margin-bottom: 100px;

@@ -1,4 +1,7 @@
 .page-title{
+  @include respond-to(tabletAndWider){
+    padding-left: 10px;
+  }
   &__title{
     margin-bottom: 21px;
     color: $alter-content-color;
@@ -8,6 +11,12 @@
     // Text style for "R, Izor  ,"
     letter-spacing: 2.4px;
     text-transform: uppercase;
+    @include respond-to(tabletAndWider){
+      margin-bottom: 39px;
+      color: $title-color;
+      letter-spacing: 5.12px;
+      font-size: 64px;
+    }
   }
   &__description{
     color: $alter-content-color;
@@ -16,7 +25,14 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    // Text style for "М, аневрен"
     letter-spacing: 0.96px;
+    @include respond-to(tabletAndWider){
+      width: 300px;
+      color: $title-color;
+      font-family: $content-ff;
+      font-size: 14px;
+      letter-spacing: 1.12px;
+      line-height: 16px;
+    }
   }
 }

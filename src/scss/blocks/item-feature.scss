@@ -1,11 +1,30 @@
 .item-feature{
   @extend %fl-col;
   margin-bottom: 35px;
+  @include respond-to(tabletAndWider){
+    position: relative;
+  }
+  &--design{
+    @include respond-to(tabletAndWider){
+      padding-top: 18px;
+      margin-left: 400px;
+      padding-bottom: 115px;
+    }
+  }
   &--color{
     padding-bottom: 13px;
+    @include respond-to(tabletAndWider){
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+
+    }
   }
   &--indikators{
     padding-bottom: 13px;
+    @include respond-to(tabletAndWider){
+      padding: 0 1px 0 117px;
+    }
   }
   &--modes{
     padding-bottom: 13px;
@@ -30,13 +49,26 @@
     text-align: center;
     &--design{
       order: 1;
+      @include respond-to(tabletAndWider){
+        padding-left: 47px;
+        text-align: left;
+      }
     }
     &--color{
       margin-bottom: 0;
+      @include respond-to(tabletAndWider){
+        position: absolute;
+        top: 98px;
+        left: 112px;
+      }
     }
     &--indikators{
       margin-bottom: 1px;
       padding: 24px 0 24px;
+      @include respond-to(tabletAndWider){
+        text-align: left;
+        padding-top: 37px;
+      }
     }
     &--battery{
       order: 0;
@@ -50,12 +82,23 @@
     &--design{
       order: 1;
     }
+    &--color{
+      @include respond-to(tabletAndWider){
+        align-self: center;
+      }
+    }
   }
   &__media{
     position: relative;
     &--design{
       order: 2;
       display: none;
+      @include respond-to(tabletAndWider){
+        position: absolute;
+        display: block;
+        left: -682px;
+        top: -146px;
+      }
     }
     &--battery{
       order: 2;
@@ -67,6 +110,13 @@
     justify-content: space-around;
     padding: 0 30px;
     margin-bottom: 38px;
+    @include respond-to(tabletAndWider){
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 40px;
+    }
   }
   &__variant{
     display: block;
@@ -92,6 +142,13 @@
   &__text-description{
     padding: 0 40px 32px 38px;
     line-height: 27px;
+    &--color{
+      @include respond-to(tabletAndWider){
+        //почему не изменятся ширина текстового flex блока?
+        padding: 66px 19px 32px 116px;
+        width: 180px;
+      }
+    }
     &--modes{
       padding: 0 40px 19px 41px;
       line-height: 27px;
@@ -109,6 +166,11 @@
       padding-left: 20px;
       letter-spacing: 0.2px;
       line-height: 24px;
+    }
+    &--indikators{
+      @include respond-to(tabletAndWider){
+        padding-left: 0;
+      }
     }
   }
   &__specification-item{
@@ -128,6 +190,15 @@
   &__image{
     &--design{
       padding-left: 10px;
+      @include respond-to(tabletAndWider){
+        display: block;
+      }
+    }
+    &--color{
+      @include respond-to(tabletAndWider){
+        position: relative;
+        bottom: 18px;
+      }
     }
     &--indikators{
       margin-top: 20px;

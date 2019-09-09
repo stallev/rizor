@@ -2,4 +2,7 @@
   &__article-list{
     @extend %fl-col;
   }
+  @include respond-to(tabletAndWider){
+    margin-top: 105px;
+  }
 }
