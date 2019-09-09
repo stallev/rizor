@@ -1,4 +1,7 @@
 .page-title{
+  @include respond-to(tabletAndWider){
+    padding-left: 10px;
+  }
   &__title{
     margin-bottom: 21px;
     color: $alter-content-color;

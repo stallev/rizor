@@ -9,4 +9,10 @@
   text-transform: uppercase;
   // Text style for "п, реимуще"
   letter-spacing: 1.12px;
+  &--advantages{
+    @include respond-to(tabletAndWider){
+      margin-top: 81px;
+      padding-left: 250px;
+    }
+  }
 }

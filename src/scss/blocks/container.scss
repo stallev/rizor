@@ -15,6 +15,11 @@
       position: relative;
     }
   }
+  &--advantages{
+    @include respond-to(tabletAndWider){
+      overflow: hidden;
+    }
+  }
   &--characteristics{
     margin-bottom: 100px;
   }

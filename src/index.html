@@ -57,7 +57,7 @@
   <main class="main">
     <section class="advantages">
       <div class="container container--advantages">
-        <h2 class="section-title">преимущества</h2>
+        <h2 class="section-title section-title--advantages">преимущества</h2>
         <div class="advantages__article-list">
           <article class="item-feature item-feature--design">
             <h3 class="item-feature__title item-feature__title--design">Дизайн</h3>
@@ -67,8 +67,8 @@
                 <img src="img/content/design_tab.png" alt="logo">
               </picture>
               <div class="look-video look-video--design">
-                <p class="look-video__circle"></p>
-                <button class="look-video__button"></button>
+                <p class="look-video__circle look-video__circle--center"></p>
+                <button class="look-video__button look-video__button--center"></button>
               </div>
             </div>
             <div class="item-feature__text item-feature__text--design">
@@ -90,22 +90,22 @@
           </article>
           <article class="item-feature item-feature--color">
             <h3 class="item-feature__title item-feature__title--color">Цвет</h3>
-            <div class="item-feature__text">
+            <div class="item-feature__text item-feature__text--color">
               <p class="item-feature__text-description item-feature__text-description--color">
                 Модель представлена сразу в нескольких цветах.
               </p>
             </div>
+            <div class="item-feature__variants">
+              <span class="item-feature__variant item-feature__variant--yellow"></span>
+              <span class="item-feature__variant item-feature__variant--blue"></span>
+              <span class="item-feature__variant item-feature__variant--red"></span>
+              <span class="item-feature__variant item-feature__variant--white"></span>
+              <span class="item-feature__variant item-feature__variant--black"></span>
+            </div>
             <div class="item-feature__media">
-              <div class="item-feature__variants">
-                <span class="item-feature__variant item-feature__variant--yellow"></span>
-                <span class="item-feature__variant item-feature__variant--blue"></span>
-                <span class="item-feature__variant item-feature__variant--red"></span>
-                <span class="item-feature__variant item-feature__variant--white"></span>
-                <span class="item-feature__variant item-feature__variant--black"></span>
-              </div>
-              <picture class="item-feature__image item-feature__image--design">
+              <picture class="item-feature__image item-feature__image--color">
                 <source media="(min-width: 1920px)" srcset="img/content/color-gyro_des.png">
-                <source media="(min-width: 768px)" srcset="img/content/color-gyro_tab">
+                <source media="(min-width: 768px)" srcset="img/content/color-gyro_tab.png">
                 <img src="img/content/color-gyro_mob.png" alt="color">
               </picture>
             </div>
@@ -121,8 +121,10 @@
               </p>
             </div>
             <div class="look-video look-video--indikators">
-              <span class="look-video__text">Смотреть видео</span>
-              <button class="look-video__button"></button>
+              <span class="look-video__text">
+                смотреть видео
+              </span>
+              <button class="look-video__button look-video__button--side"></button>
             </div>
             <picture class="item-feature__image item-feature__image--indikators">
               <source media="(min-width: 1920px)" srcset="img/content/indicators_des.jpg">

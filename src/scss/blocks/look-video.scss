@@ -3,14 +3,33 @@
   position: absolute;
   @include respond-to(tabletAndWider){
     position: absolute;
+    display: block;
   }
   &--header-bottom{
     display: none;
     @include respond-to(tabletAndWider){
       display: flex;
-      left: 253px;
+      left: 268px;
       top: -146px;
     }
+  }
+  &--indikators{
+    @include respond-to(tabletAndWider){
+      display: flex;
+      left: 90px;
+      top: 418px;
+    }
+  }
+  &--modes{
+    @include respond-to(tabletAndWider){
+      display: flex;
+      left: 268px;
+      top: 146px;
+    }
+  }
+  &--design{
+    top: 247px;
+    left: 398px;
   }
   &--electronics{
     display: block;
@@ -26,8 +45,19 @@
     border-radius: 50%;
     background-color: $alter-content-color;
     opacity: 0.8;
+    @include respond-to(tabletAndWider){
+      width: 100px;
+      height: 100px;
+    }
+    &--center{
+      @include respond-to(tabletAndWider){
+        width: 100px;
+        height: 100px;
+      }
+    }
   }
   &__button{
+    position: absolute;
     padding: 0;
     width: 25px;
     height: 28px;
@@ -36,12 +66,20 @@
     background-size: 112%;
     background-repeat: no-repeat;
     &--side{
-      position: absolute;
       left: 7px;
       top: -5px;
       @include respond-to(tabletAndWider){
         width: 50px;
         height: 58px;
+      }
+    }
+    &--center{
+      @include respond-to(tabletAndWider){
+        width: 40px;
+        height: 44px;
+        top: 29px;
+        left: 31px;
+        background-size: 112%;
       }
     }
   }
